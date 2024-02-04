@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-
 'use client'
 import './signup.css'
 
-// import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 
@@ -58,18 +56,6 @@ const SignUp = () => {
 
   return (
     <div className="hero">
-      <div className="cards_a">
-        <img
-          src="https://res.cloudinary.com/dra96qhox/image/upload/v1705344262/card.png"
-          alt="Card A"
-        />
-      </div>
-      <div className="cards_b">
-        <img
-          src="https://res.cloudinary.com/dra96qhox/image/upload/v1705344262/card.png"
-          alt="Card B"
-        />
-      </div>
       <div className="form-box">
         <div className="button-box">
           <div id="btn" />
@@ -144,13 +130,13 @@ const SignUp = () => {
               value={password}
               onChange={handlePasswordChange}
             />
-            <button className="signupbutton" type="submit" onClick={handleSignIn}>
+            <button className="signupbutton" type="submit" onClick={handleSignUp}>
               Sign in
             </button>
-            <button className="extsign" type="submit" onClick={signInWithGoogle}>
+            <button className="extsign" type="submit" onClick={signUpWithGoogle}>
               Sign in with Google
             </button>
-            <button className="extsign" type="submit" onClick={signInWithGitHub}>
+            <button className="extsign" type="submit" onClick={signUpWithGitHub}>
               Sign in with Github
             </button>
           </form>
